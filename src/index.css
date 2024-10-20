@@ -1,13 +1,70 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://v1.fontapi.ir/css/Vazir');
+
+* {
+    font-family: Vazir, sans-serif;
+    box-sizing: border-box;   
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background-color: #00d192;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 700px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 1px 0;
+}
+
+.container h4 {
+    color: #333333;
+    padding: 0 15px;
+}
+
+.accordion-item {
+    box-shadow: 0 0 9px #e6e6e6;
+    border-radius: 5px;
+    margin: 15px;
+    color: #333333;
+}
+
+.accordion-item header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 12px;
+}
+
+.accordion-item header button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.accordion-item p {
+    text-align: justify;
+    padding: 0 12px 12px 12px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 720px) {
+    .container {
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .container {
+        width: 370px;
+    }
 }
